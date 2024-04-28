@@ -1,0 +1,55 @@
+$bg-image: url("../../img/pexels-jonathan-borba-13061424.jpg");
+.loginContainer {
+  background: $bg-image center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+}
+
+#loginForm {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  input,
+  button {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 10px;
+  }
+  button {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .error-message {
+    color: red;
+    margin: 0;
+    padding: 0;
+  }
+  label {
+    width: 100%;
+  }
+}

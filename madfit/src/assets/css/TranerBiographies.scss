@@ -1,0 +1,182 @@
+.Tracer-Biographies {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  .Tracer-Biographies-container,
+  .Tracer-Biographies-container-2 {
+    width: 86%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 3rem 2.875rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    z-index: 1;
+
+    .circle-image-logo {
+      position: absolute;
+      top: -30%;
+      left: -10%;
+    }
+
+    .circle-image-logo-2 {
+      position: absolute;
+      bottom: -30%;
+      right: -10%;
+    }
+
+    .Tracer-Biographies-text {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1rem 0;
+      position: relative;
+      z-index: 2;
+
+      h2 {
+        position: relative;
+        display: inline-block;
+        color: #32bab0;
+        font-family: "Boston Black";
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        .header-icon {
+          background-color: #c6e8e5;
+          margin-right: 0.3rem;
+          border-radius: 20%;
+          cursor: pointer;
+        }
+      }
+
+      p {
+        color: #6b816f;
+        font-family: "Boston Regular";
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.875rem;
+        letter-spacing: 0.05em;
+      }
+
+      .common-btn {
+        width: fit-content;
+      }
+    }
+
+    .Tracer-Biographies-image {
+      width: 40%;
+      position: relative;
+      z-index: 2;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// media queries
+
+@media only screen and (max-width: 1200px) {
+  .Tracer-Biographies {
+    .Tracer-Biographies-container,
+    .Tracer-Biographies-container-2 {
+      width: 95%;
+      flex-direction: column;
+      gap: 0;
+      padding: 1.5rem;
+
+      .Tracer-Biographies-text {
+        width: 100%;
+        gap: 1rem;
+      }
+
+      .Tracer-Biographies-image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .Tracer-Biographies-container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0;
+      .Tracer-Biographies-text {
+        width: 100%;
+        gap: 1rem;
+      }
+
+      .Tracer-Biographies-image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .Tracer-Biographies {
+    .navbar{
+      .logo-img{
+         width: 13.375rem;
+         display: block;
+         margin: 0 auto;
+ 
+      }
+    }
+    .Tracer-Biographies-container,
+    .Tracer-Biographies-container-2 {
+      width: 95%;
+      flex-direction: column;
+      gap: 0;
+      padding: 1.5rem;
+
+      .Tracer-Biographies-text {
+        width: 100%;
+        gap: 1rem;
+
+        h2{
+          font-size: 2rem;
+        }
+      }
+
+      .Tracer-Biographies-image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .Tracer-Biographies-container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0;
+      .Tracer-Biographies-text {
+        width: 100%;
+        gap: 1rem;
+      }
+
+      .Tracer-Biographies-image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

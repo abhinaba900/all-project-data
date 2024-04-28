@@ -1,0 +1,288 @@
+.app-feature-container-parent-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  .app-feature-container-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    &:nth-child(odd) {
+      background: #daf3e5;
+      padding: 40px 40px 60px;
+      border-radius: 10px;
+
+      .app-feature-text-container-2 .app-feature-image-2 {
+        background-image: url("https://coral-app-akhln.ondigitalocean.app/static/media/circle.1b669e34b20ea554f7806b56d00b5cdf.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        display: flex;
+        margin-top: -90px;
+        margin-left: -1rem;
+
+        img {
+          margin-left: 10rem !important;
+          margin-top: 54px !important;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      background: #d6f1ef;
+      padding: 40px 40px 60px;
+      border-radius: 10px;
+      margin-top: 2rem;
+
+      .app-feature-text-container-2 .app-feature-image-2 {
+        background-image: url("https://coral-app-akhln.ondigitalocean.app/static/media/full-circle2.4d0e9e95bf2d1f59fe43.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        display: flex;
+        margin-top: -90px;
+        margin-right: -6rem;
+        margin-left: auto;
+
+        img {
+          margin-top: 54px;
+          margin-left: auto;
+          margin-bottom: -30px;
+          padding: 1rem;
+        }
+      }
+
+      .app-feature-text-container-2 {
+        justify-content: left;
+
+        .app-feature-image-2 {
+          margin: 0;
+        }
+
+        .app-feature-text-2 {
+          width: 60%;
+        }
+      }
+    }
+
+    .app-feature-text-container,
+    .app-feature-text-container-2 {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+      // justify-content: center;
+      .app-feature-text {
+        width: 60%;
+
+        h2 {
+          font-family: "Boston Black";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        p {
+          font-family: "Boston Regular";
+          font-size: 1rem;
+          color: #2c2c35;
+          font-weight: 400;
+          line-height: 30px;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          position: relative;
+        }
+      }
+
+      .app-feature-text-2 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .common-btn {
+          margin: 0;
+          width: 30%;
+        }
+
+        h2 {
+          font-family: "Boston Black";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        p {
+          font-family: "Boston Regular";
+          font-size: 1rem;
+          color: #2c2c35;
+          font-weight: 400;
+          line-height: 30px;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          font-size: 20px;
+          padding: 14px 0 21px;
+        }
+      }
+
+      .app-feature-image {
+        width: 40%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 10px solid #fff;
+          margin-top: -80px;
+        }
+      }
+
+      .app-feature-image-2 {
+        width: 40%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .app-feature-text-container-2 {
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    .logo-img {
+      width: 20.375rem;
+    }
+  }
+  .app-feature-container-parent-2 {
+    .app-feature-container-parent {
+      margin-top: 2rem;
+
+      &:nth-child(odd) {
+        .app-feature-text-container-2 .app-feature-image-2 {
+          margin-top: -90px;
+        }
+      }
+      .app-feature-text-container,
+      .app-feature-text-container-2 {
+        flex-direction: column;
+        .app-feature-text {
+          width: 100%;
+        }
+
+        .app-feature-text-2 {
+          width: 100%;
+          text-align: center;
+          .common-btn {
+            margin: auto;
+          }
+        }
+
+        .app-feature-image {
+          width: 100%;
+          flex-direction: column-reverse;
+        }
+        .app-feature-image-2 {
+          width: 100%;
+          flex-direction: column-reverse;
+          background: none;
+          img {
+            margin: 0 !important;
+            width: 100%;
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        .app-feature-text-container-2 {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &:nth-child(even) {
+        .app-feature-text-container {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+
+  .app-feature-container-parent-2
+    .app-feature-container-parent:nth-child(odd)
+    .app-feature-text-container-2
+    .app-feature-image-2
+    img {
+    margin-left: 0rem !important;
+    margin-top: 54px !important;
+  }
+
+  .app-feature-container-parent-2
+    .app-feature-container-parent:nth-child(even)
+    .app-feature-text-container-2
+    .app-feature-text-2 {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    .logo-img {
+      width: 16.375rem;
+    }
+  }
+  .app-feature-container-parent-2 {
+    .app-feature-container-parent {
+      .app-feature-text-container,
+      .app-feature-text-container-2 {
+        flex-direction: column;
+        .app-feature-text {
+          width: 100%;
+        }
+
+        .app-feature-text-2 {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .app-feature-image {
+          width: 100%;
+          flex-direction: column-reverse;
+        }
+        .app-feature-image-2 {
+          width: 100%;
+          flex-direction: column-reverse;
+          img {
+            margin: 0;
+            margin-left: 0;
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        .app-feature-text-container-2 {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &:nth-child(even) {
+        .app-feature-text-container {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}

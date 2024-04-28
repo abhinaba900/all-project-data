@@ -1,0 +1,35 @@
+.group-details-page{
+    width: 40%;
+    border-radius: 10px;
+    padding: 1em;
+    
+}
+
+.loading{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.gallery0{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100vw;
+}
+
+.risk-details-page{
+    width: 40%;
+    height: 500px;
+}
+.group-details-page-wrapper{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.container{
+    background-color: #F0F8FF;
+}

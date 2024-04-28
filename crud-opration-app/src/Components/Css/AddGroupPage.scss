@@ -1,0 +1,36 @@
+// .checkbox{
+//     display: grid;  
+//     grid-template-columns: repeat(4, 1fr);
+// }
+
+.form-group{
+    width: 100%;
+}
+
+.imageUrl{
+    width: 20%;
+    border: 1px solid black;
+    position: absolute;
+    top: 00%;
+    right: 2%;
+}
+.input-label{
+    width: 100%;
+    position: relative;
+}
+
+.input-field{
+    width: 100%;
+    position: relative;
+    margin-bottom: .2em;
+}
+
+.add-media-btn{
+    margin-left: 72%;
+}
+
+.submit-btn{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

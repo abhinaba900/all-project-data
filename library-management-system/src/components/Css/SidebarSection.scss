@@ -1,0 +1,66 @@
+.btn-secondary {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2em;
+}
+
+.sidebarLogoutButton {
+  margin-top: 1em;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.sidebar {
+  height: 100vh;
+  background: rgb(52, 58, 64);
+  color: #fff;
+  padding-top: 2em;
+  margin-right: 1em;
+  background-image: url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-weight: 500;
+}
+
+img {
+  aspect-ratio: 1/1;
+}
+
+.active-btn {
+  background: rgb(0, 123, 255);
+  color: #fff;
+  border: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: right;
+  gap: 1em;
+  justify-content: space-between;
+  margin-bottom: 1em;
+
+  button {
+    display: block;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}

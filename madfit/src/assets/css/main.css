@@ -1,0 +1,193 @@
+*{
+    /* box-sizing: border-box; */
+    font-family: 'Boston Regular';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+  font-family: 'Boston Regular';
+}
+
+:root {
+  --blue: #32BAB0;
+  --Viridian_green:#6B816F;
+  --white:#FFFFFF;
+  --black_bold:#2C2C35;
+  --background:#D6F1EF;
+  --sub_desc:#FFA889;
+  --light_black:#9E9E9E;
+  --white:#FFFFFF;
+  
+  
+  
+  
+  /* --white: #ffffff; */
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+@font-face {
+    font-family: 'Boston Black';
+    src:url('../Boston/Boston/BostonBlack.otf');
+   
+    /* src: url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('../fonts/FUTURAH.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap; */
+  }
+  @font-face {
+    font-family: 'Boston Bold';
+    src:url('../Boston/Boston/BostonBold.otf')
+    /* src: url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('../fonts/FUTURAH.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap; */
+  }
+  @font-face {
+    font-family: 'Boston Regular';
+    src:url('../Boston/Boston/BostonRegular.otf')
+    /* src: url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('../fonts/FUTURAH.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap; */
+  }
+  @font-face {
+    font-family: 'Boston Light';
+    src:url('../Boston/Boston/BostonLight.otf')
+    /* src: url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('../fonts/FUTURAH.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap; */
+  }
+  @font-face {
+    font-family: 'Boston SemiBold';
+    src:url('../Boston/Boston/BostonSemiBold.otf')
+    /* src: url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('../fonts/FUTURAH.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap; */
+  }
+  h1{ 
+    font-family: 'Boston Bold';
+    color: #2C2C35;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  
+  h2{
+    font-family: 'Boston Bold';
+    color: #2C2C35;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+  .margin_seter{
+    position:relative;
+    margin-left:83px;
+    margin-right: 83px;
+}
+.position_relative{
+  position: relative;
+  height:100%;
+  width:100%
+}
+.section_com_header{
+  font-family: 'Boston Black';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 50px;
+/* text-align: center; */
+/* or 125% */
+
+text-transform: uppercase;
+
+color: var(--black_bold)
+}
+.section_com_para{
+  font-family: 'Boston Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+
+
+color: var(--Viridian_green)
+}
+.section_com_normal_heading{
+font-family: 'Boston Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+/* text-align: center; */
+
+color: var(--black_bold)
+}
+.section_com_semi_bold{
+  font-family: 'Boston SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  text-align: center;
+  /* color: #FFFFFF; */
+}
+
+
+.sec_inner_button_pos{
+  width: 150px;
+  height: 46px;
+  /* left: 80px; */
+  margin-top:34px;
+  
+  
+  }
+  /* .sec:nth-child(2) .sec_inner_button_pos{
+      margin-bottom: 71px;
+  } */
+  /* .sec:nth-child(2) .sec_inner .sec_inner_button { */
+       .sec_inner_button {
+      background:var(--white);
+  border-radius: 200px;
+  display:flex;
+  }
+  
+  /* .sec:nth-child(2) .sec_inner .sec_inner_button .sec_inner_button_anchor{ */
+       .sec_inner_button .sec_inner_button_anchor{
+      text-decoration: none;
+      font-family: 'Boston Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 19px;
+      color: var(--blue);
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      /* text-align: center; */
+  }
