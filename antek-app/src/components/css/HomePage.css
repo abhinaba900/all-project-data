@@ -1,0 +1,986 @@
+/* all common styles for home page */
+:root {
+  --li-img: url("../../assets/svgexport-39.svg");
+}
+/* heading section for offer and latest updates */
+
+.head-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.head-section .head-image-and-text-common-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.head-section .head-image-and-text-common-section .white-top-section-text {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.head-section .logo-section-for-heading {
+  display: flex;
+  gap: 1rem;
+  padding-right: 10rem;
+}
+
+.head-section .logo-section-for-heading img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .head-section {
+    display: none;
+  }
+}
+
+/* navbar section for desktop view */
+.container-fluid {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.navbar-for-home-page-and-it-is-for-desktop-parent-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1rem auto;
+}
+
+.navbar-for-home-page-and-it-is-for-desktop-parent-container
+  .navbar-for-home-page-and-it-is-for-desktop-child-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 4rem;
+}
+
+/* mobile vue */
+
+@media (max-width: 1200px) {
+  .container-fluid {
+    display: none;
+  }
+  .navbar-for-home-page-and-it-is-for-desktop-parent-container
+    .navbar-for-home-page-and-it-is-for-desktop-child-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .navbar-for-home-page-and-it-is-for-desktop-child-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+  }
+
+  .navbar-for-home-page-and-it-is-for-desktop-child-container
+    .common-container-for-links-in-react-router {
+    color: white;
+  }
+
+  .dropdown {
+    display: inline;
+  }
+}
+
+/* inside slider content section  */
+
+.text-container-for-slider-for-home-page-parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heading-logo-section-container-for-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-logo-section-container-for-slider img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.heading-logo-section-container-for-slider-2 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.heading-logo-section-container-for-slider-2 img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.white-top-section-text {
+  color: white;
+  font-family: "Barlow-Regular";
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.white-top-section-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-family: "Barlow-Regular";
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.white-top-section-text span {
+  font-size: calc(21.2px + 2.125vw);
+  font-family: "Barlow-Regular";
+  margin-top: 1rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .white-top-section-text span {
+    line-height: 1.5rem;
+  }
+
+  .heading-logo-section-container-for-slider {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 20%;
+  }
+}
+
+/* find the right equipment */
+
+.inner-filter {
+  background-color: #edb509;
+  color: #fff;
+  min-height: 50vh;
+  padding: 60px 20px 70px;
+  position: relative;
+  top: -22px;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.inner-filter h3 {
+  font-size: 2rem;
+  font-family: "Barlow-Regular";
+  font-weight: 900;
+  line-height: 1rem;
+}
+
+.main-container-for-input-for-find-the-right-equipment {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.8rem;
+}
+
+.input-container-for-find-the-right-equipment {
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1rem;
+}
+
+.input-container-for-find-the-right-equipment img {
+  padding-right: 1rem;
+  border-right: 1px solid black;
+}
+
+.input-container-for-find-the-right-equipment select {
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
+  width: 15rem;
+  height: 100%;
+}
+
+.input-container-for-find-the-right-equipment input {
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
+  padding-left: 1rem;
+}
+
+.main-container-for-input-for-find-the-right-equipment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.input-container-for-find-the-right-equipment-2 {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  justify-content: center;
+  font-size: 1.125rem;
+}
+
+.input-container-for-find-the-right-equipment-2 input[type="radio"] {
+  border-right: 1px solid black;
+  padding-right: 1rem;
+  transform: scale(1.5);
+}
+
+.main-container-for-input-for-find-the-right-equipment button[type="submit"] {
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+  height: 3.875rem;
+  justify-content: center;
+  padding: 0.625rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 29%;
+  background-color: #222222;
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .inner-filter {
+    padding: 40px 10px;
+  }
+
+  .inner-filter h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-container-for-input-for-find-the-right-equipment {
+    flex-direction: column;
+  }
+
+  .input-container-for-find-the-right-equipment,
+  .input-container-for-find-the-right-equipment-2 {
+    justify-content: center;
+  }
+  .input-container-for-find-the-right-equipment-2 {
+    font-size: 1rem;
+  }
+
+  .input-container-for-find-the-right-equipment-2 input[type="radio"] {
+    border-right: 1px solid black;
+    padding-right: 0;
+    transform: scale(auto);
+  }
+
+  .main-container-for-input-for-find-the-right-equipment button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* browse machinery categories */
+
+.browse-machinery-categories-container-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.browse-machinery-categories-container-parent p {
+  font-size: 1.5rem;
+  font-family: "Barlow-Regular";
+  color: #888;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.browse-machinery-categories-container-parent h3 {
+  font-size: 2.5rem;
+  font-family: "Barlow-Regular";
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+}
+
+.browse-machinery-categories-container-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 6rem;
+}
+
+.browse-machinery-categories-container-child-image {
+  position: relative;
+}
+
+.browse-machinery-categories-container-child-image img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.browse-machinery-categories-container-child-image h2 {
+  align-items: center;
+  background-color: #e9e9e9;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 1.375rem;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 6.25rem;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  top: -20%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.browse-machinery-categories-container-child-image:hover h2 {
+  background-color: #edb509;
+  color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+
+.browse-machinery-categories-container-child-image:hover::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.875rem;
+  font-weight: 900;
+  transition: all 1s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .browse-machinery-categories-container-child {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* about antek equipments rental */
+
+.about-antek-equipments-rental-container-parent {
+  background: black;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 120px 40px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-bottom: 4rem;
+}
+
+.about-antek-equipments-rental-container-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  color: white;
+}
+
+.about-antek-equipments-rental-container-child-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+  gap: 1rem;
+}
+
+.about-antek-equipments-rental-container-child-text
+  .heading-logo-section-container-for-slider {
+  justify-content: left;
+}
+
+.about-antek-equipments-rental-container-child-text p {
+  font-family: "Barlow-Regular";
+  color: #ffffffab;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 0 0 4px;
+  padding: 0;
+  text-align: left;
+}
+
+.about-antek-equipments-rental-container-child-text h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0 0 35px;
+  text-align: left;
+}
+
+.about-antek-equipments-rental-container-child-text
+  .about-antek-equipments-rental-container-child-text-child {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-antek-equipments-rental-container-child-text
+  .about-antek-equipments-rental-container-child-text-child
+  h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.3em;
+  border-right: 1px solid white;
+  padding-right: 1rem;
+}
+
+/* mobile responsive for about antek equipments rental */
+
+@media (max-width: 1200px) {
+  .about-antek-equipments-rental-container-parent {
+    padding: 0.5rem;
+  }
+
+  .about-antek-equipments-rental-container-child {
+    flex-direction: column;
+  }
+
+  .about-antek-equipments-rental-container-child-image {
+    width: 100%;
+  }
+
+  .about-antek-equipments-rental-container-child-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-antek-equipments-rental-container-child-text p {
+    font-size: 0.8rem;
+  }
+
+  .about-antek-equipments-rental-container-child-text
+    .about-antek-equipments-rental-container-child-text-child
+    h2 {
+    font-size: 1rem;
+  }
+}
+
+/* about antek equipments rental bottom section */
+
+.about-antek-equipment-rental-bottom-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 120px 40px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.about-antek-equipment-rental-bottom-section-container-child-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-antek-equipment-rental-bottom-section-container-child-1-text {
+  padding: 33px 30px 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.rent {
+  font-family: "Barlow-Regular";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 0 0 4px;
+  padding: 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about-antek-equipment-rental-bottom-section-container-child-1-text:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+  cursor: pointer;
+  color: white;
+  background-color: #222222;
+}
+
+.about-antek-equipments-rental-container-child-text-2
+  .heading-logo-section-container-for-slider {
+  justify-content: left;
+}
+
+.about-antek-equipments-rental-container-child-text-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 0.5rem;
+}
+
+.about-antek-equipments-rental-container-child-text-2 p {
+  font-family: "Barlow-Regular";
+  color: #888;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 0 0 4px;
+  padding: 0;
+  text-align: left;
+}
+
+.about-antek-equipments-rental-container-child-text-2 h3 {
+  color: #222;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0 0 35px;
+  text-align: left;
+}
+
+.about-antek-equipments-rental-container-child-text-2 ul > li {
+  font-family: "Barlow-Regular";
+  color: #888;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 0 0 4px;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.about-antek-equipments-rental-container-child-text-2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-antek-equipments-rental-container-child-text-2 ul > li::before {
+  content: var(--li-img);
+  margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  font-size: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .about-antek-equipment-rental-bottom-section {
+    flex-direction: column;
+  }
+
+  .about-antek-equipment-rental-bottom-section-container-child-1-tex {
+    padding: 1rem;
+  }
+
+  .about-antek-equipment-rental-bottom-section-container-child-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add space between slides in React Slick */
+.slider-item-2 {
+  display: grid;
+}
+
+/* Adjust the right margin for the last slide in the slider */
+.browse-machinery-categories-container-child-revue-section-parent .slick-slide:last-child .slider-item-2 {
+  margin-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .slider-item-2 {
+    margin-right: 15px; /* Smaller space for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-item-2 {
+    margin-right: 10px; /* Even smaller space for very small screens */
+  }
+}
+
+/* customers thoughts section */
+
+.browse-machinery-categories-container-child-revue-section-parent {
+  width: 100%;
+  
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+
+.slider-item-2{
+  margin-right: 1rem;
+}
+
+
+
+
+
+.browse-machinery-categories-container-parent {
+  position: relative;
+}
+
+.browse-machinery-categories-container-child-revue-section {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 55px 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  gap: 1rem;
+}
+
+.rating-container-and-name {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.c-ip-reviews__info {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.c-ip-reviews__info h3 {
+  font-family: "Barlow-Regular";
+  display: inline;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.c-ip-reviews__info p {
+  font-family: "Barlow-Regular";
+  color: #888;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  padding: 0;
+  text-align: left;
+}
+
+.c-ip-reviews__avatar {
+  border-radius: 50%;
+}
+
+.c-ip-reviews__rating {
+  margin-top: 0.5rem;
+}
+
+.browse-machinery-categories-container-child-revue-section p {
+  font-size: 1.5rem;
+  font-family: "Barlow-Regular";
+  color: #888;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  text-align: left;
+}
+
+.browse-machinery-categories-container-child-revue-section h3 {
+  font-size: 1.125rem;
+  font-family: "Barlow-Regular";
+  color: #222;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .browse-machinery-categories-container-child-revue-section-parent {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .browse-machinery-categories-container-child-revue-section {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 55px 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* footer section  */
+
+.first-footer-component,
+.second-footer-component {
+  background-color: black;
+  padding: 100px 25px 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 0.1px solid #888;
+}
+
+.footer-last-component {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+}
+
+.first-footer-component-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.first-footer-component img {
+  border-right: 1px solid #edb509;
+  padding-right: 1rem;
+}
+
+.first-footer-component-text h2 {
+  font-size: 2.688rem;
+  font-family: "Barlow-Regular";
+  font-weight: 700;
+}
+
+.first-footer-component-text p {
+  font-size: 1.5rem;
+  font-family: "Barlow-Regular";
+  font-weight: 500;
+  color: #ffffff87;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.first-footer-component-search-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-footer-component-search-section input {
+  border-radius: 2px;
+  border: 1px solid #edb509;
+  outline: none;
+  background-color: transparent;
+  width: 15rem;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.first-footer-component-search-section button {
+  background-color: #edb509;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Barlow-Regular";
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.second-footer-component
+  .second-footer-component-common
+  .heading-logo-section-container-for-slider {
+  justify-content: left;
+}
+
+.second-footer-component {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  gap: 1rem;
+  padding-left: 3rem;
+}
+
+.second-footer-component-common .logo-section-for-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.second-footer-component span {
+  font-family: "Barlow-Regular";
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.second-footer-component p {
+  font-family: "Barlow-Regular";
+  font-weight: 500;
+  line-height: 1.2em;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #888;
+}
+
+.second-footer-component-common {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* media quarry section for footer */
+@media (max-width: 1200px) {
+  .first-footer-component,
+  .second-footer-component {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .first-footer-component img {
+    display: none;
+  }
+
+  .second-footer-component {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.sub-div-main {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 0.5rem;
+}
+
+.text-section-logo-cart p {
+  margin-bottom: 0;
+}
+
+.text-section-logo-cart h4 {
+  font-size: 1.125rem;
+}
+
+/* navbar for mobile section */
+
+.mobile-navbar {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .mobile-navbar {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hamburger-menu-2 {
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    background-color: rgba(25, 23, 23, 0.9);
+    color: white;
+    padding: 2rem;
+    transition: left 1.1s ease-in-out;
+    z-index: 9999;
+  }
+
+  .hamburger-menu-2.active {
+    left: 0;
+  }
+
+  .details-container-for-mobile-navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .details-container-for-mobile-navbar div h2 {
+    font-size: 1rem;
+  }
+
+  .details-container-for-mobile-navbar-2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .details-container-for-mobile-navbar-2 h2 {
+    font-size: 1rem;
+  }
+
+  .social-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}

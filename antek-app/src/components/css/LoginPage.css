@@ -1,0 +1,93 @@
+.login-and-signup-parent-container {
+  width: 50%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.navigation-link-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 45px;
+  padding: 50px 55px 0;
+  width: 100%;
+  font-size: 30px;
+}
+
+.navigation-link-container .p-tag-link {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: left;
+  gap: 1rem;
+  text-align: left;
+}
+
+.form-section label {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"],
+.form-section input[type="number"],
+.form-section input[type="submit"] {
+  background-color: initial;
+  border: 0;
+  border: 2px solid #ddd !important;
+  border-radius: 2px;
+  color: var(--text-color);
+  font-size: 16px;
+  height: auto;
+  line-height: 24px;
+  min-width: 0;
+  outline: none !important;
+  padding: 18px 25px;
+  width: 100%;
+}
+
+.form-section input[type="submit"] {
+  background-color: #edb509;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.error{
+  color: red;
+  font-size: 15px;
+  
+}
+
+
+@media (max-width: 1200px) {
+  .login-and-signup-parent-container {
+    width: 100%;
+  }
+
+  .navigation-link-container {
+    font-size: 20px;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+  
+}

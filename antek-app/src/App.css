@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: "Barlow-Regular";
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+
+body {
+  position: relative;
+}
+
+.App {
+  position: relative;
+  scroll-behavior: smooth;
+  animation: scroll 0.5s ease-in-out;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,260 @@
+.head-section-for-product {
+  text-align: center;
+  width: 100%;
+  padding: 100px 50px 100px;
+  background-color: #3e371e;
+  color: #fff;
+}
+
+.head-section-for-product h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: "Barlow-Regular";
+}
+
+.body-section-for-product {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.product-details-section {
+  width: 100%;
+}
+
+.payment-details-section {
+  width: auto;
+  padding: 1rem;
+}
+
+.logo-and-price-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0 auto;
+  padding: 50px 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0 auto;
+  width: 100%;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  font-size: 40px;
+  background-color: black;
+  font-weight: bold;
+}
+
+.bottom-pricing-section {
+  color: #fff;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 38px 6px;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0 auto;
+}
+
+.date-formate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-top: 25px;
+  max-width: 100%;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.date-formate input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.where-to-deliver {
+  font-size: 16px;
+}
+
+.where-to-deliver p {
+  opacity: 0.8;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.data-available {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: green;
+  margin-top: 25px;
+  max-width: 100%;
+  padding-bottom: 25px;
+}
+
+.data-available img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.data-available p {
+  margin-bottom: 0;
+}
+
+.extra-options-section strong {
+  font-size: 1.5rem;
+}
+
+.price-and-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.price-and-checkbox .price {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.price-and-checkbox .price span:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.payment-details-section .price span:last-child {
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-section p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.book-now-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #edb509;
+  border: none;
+}
+
+.table-active-cell:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.c-vehicle-details__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top: 45px;
+  position: relative;
+}
+
+.c-vehicle-details__subheader {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 50px;
+}
+
+.product-details-section .heading-logo-section-container-for-slider {
+  justify-content: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.prod-para-heading-left {
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 18px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 400px; /* Adjust as needed */
+}
+
+.google-map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .body-section-for-product {
+    grid-template-columns: 1fr;
+  }
+
+  .product-details-section img {
+    width: 100%;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #ddd;
+}
+
+.ne-margin {
+  margin-top: -15%;
+  margin-bottom: 7%;
+}
+
+.ne-margin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #edb509;
+}
