@@ -48,7 +48,7 @@ function FindTheRightEquipment() {
   };
 
   return (
-    <div className="inner-filter container">
+    <div className="inner-filter container" id="QuickOrder">
       <div className="heading-logo-section-container-for-slider">
         <img src={LeftWhiteLogo} alt="logo left part" />
         <img src={RightWhiteLogo} alt="logo right part" />

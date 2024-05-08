@@ -49,9 +49,9 @@ function NavbarForHomePage() {
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <li>
-                <Link to={"/product/1"} className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#QuickOrder">
                   QUICK ORDER
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
